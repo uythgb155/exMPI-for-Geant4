@@ -60,6 +60,7 @@ set(exMPI01_SCRIPTS
     run.mac
     v.mac
     vis.mac
+    init_vis.mac
   )
 
 foreach(_script ${exMPI01_SCRIPTS})
