@@ -42,7 +42,9 @@
 
 #include "ActionInitialization.hh"
 #include "DetectorConstruction.hh"
-#include "FTFP_BERT.hh"
+//#include "FTFP_BERT.hh"  physicslist exist
+
+#include "physicslist.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -88,7 +90,8 @@ int main(int argc, char** argv)
 
   // setup your application
   runManager-> SetUserInitialization(new DetectorConstruction);
-  runManager-> SetUserInitialization(new FTFP_BERT);
+//  runManager-> SetUserInitialization(new FTFP_BERT); physics exist
+  runManager->SetUserInitialization(new PhysicsList);
   runManager-> SetUserInitialization(new ActionInitialization);
 
   runManager-> Initialize();
