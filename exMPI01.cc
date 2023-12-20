@@ -44,7 +44,7 @@
 #include "DetectorConstruction.hh"
 //#include "FTFP_BERT.hh"  physicslist exist
 
-#include "physicslist.hh"
+#include "PhysicsList.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
